@@ -21,8 +21,8 @@ export default function Navbar() {
       {/*Bottom Nav*/}
         <nav>
             <div className='navbar-links'>
-                <Link className='link'>Home</Link>
-                <Link className='link'>About</Link>
+                <Link to='/' className='link'>Home</Link>
+                <Link to='/about' className='link'>About</Link>
                 <Link className='link'>LPL</Link>
                 <Link className='link'>Resources</Link>
                 <Link className='link'>Events</Link>

@@ -356,3 +356,59 @@ input{
 .mt-4 {
   margin-top: 1rem;
 }
+
+/*ABOUT PAGE*/
+
+.aboutus-section{
+  background-color: rgb(249, 250, 251);
+  padding:4rem 2rem;
+}
+.aboutus-wrapper{}
+.aboutus-title{
+  font-size: 2rem;
+}
+.aboutus-desc{
+  font-size:1.2rem;
+  color:#4a5568
+}
+.ps-section{
+  margin-top: 3rem;
+  padding:2rem;
+}
+.ps-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.ps-container{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.service{
+  display: flex;
+  flex: row;
+  align-items: center;
+  gap:.5rem;
+}
+.service-container{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.ms-section{
+  margin-top: 3rem;
+  background-color: rgb(249, 250, 251);
+  padding:4rem 2rem;
+}
+.ms-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap:1.75rem;
+  align-items: center;
+}
+.ms-desc{
+  color:#4a5568
+}

@@ -26,10 +26,3 @@ export default function Meet() {
     </section>
   )
 }
-
-/*
-<div>Richard L. Moss</div>
-<div>Financial Consultant</div>
-<div>[icon] [Phone Number Here]</div>
-<div>[icon] Richard.l.moss@lpl.com</div>
-*/
