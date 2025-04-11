@@ -202,6 +202,15 @@ nav{
   gap:2rem;
   color:white;
 }
+.ameet-section{
+  background-color: white;
+  padding:4rem 2rem 2rem;
+}
+.ameet-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
 .meet-section{
   background-color: rgb(249, 250, 251);
   padding-top:3rem;
@@ -230,7 +239,8 @@ nav{
 
 .contactme-section{
   padding:2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom:2rem;
 }
 .contactme-wrapper{
   display: flex;
@@ -295,13 +305,16 @@ input{
 /*FOOTER*/
 /* Footer.css */
 .footer {
-  background-color: #f7fafc;
+  background-color: #f3f4f6;
   color: #4a5568;
   font-size: 0.875rem;
   padding:2rem 1rem;
-  margin-top:2rem;
 }
-
+.footer-legal-container{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
 .container {
   width: 90%;
   margin: 0 auto;
@@ -411,4 +424,104 @@ input{
 }
 .ms-desc{
   color:#4a5568
+}
+.credential{
+  display: flex;
+  flex: row;
+  align-items: center;
+  gap:.5rem;
+}
+.credentials-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.credentials-container{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+.ul-section{
+  margin-top: 3rem;
+  background-color: rgb(249, 250, 251);
+  padding:4rem 2rem;
+}
+.ul-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.ul-link{
+  color: #e53e3e;
+}
+.ul-card-container{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.ul-links-container{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+.ul-card{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  background-color: white;
+  border-radius: 6px;
+  padding: 2rem;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+}
+
+.event-card-details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:.5rem;
+}
+
+.events-section{
+  background-color: white;
+  padding:4rem 2rem;
+}
+
+.events-wrapper{
+}
+.event-card-date{
+  
+}
+.event-card-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1rem;
+  border-radius: 6px;
+  background-color: rgb(220, 38, 38);
+  color: white;
+  font-weight: bold;
+  gap:.5rem;
+}
+.event-card-date{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.75rem;
+}
+.event-card-date .day{
+  font-size: 30px;
+}
+.events-container{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.event-card{
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  border-radius: 6px;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
 }

@@ -26,12 +26,17 @@ const Footer = () => {
           
           <div className="footer-section">
             <h3 className="footer-heading">Legal</h3>
-            <p className="footer-legal">
-              Securities and advisory services offered through LPL Financial, a registered investment advisor, Member FINRA/SIPC. The LPL Financial registered representatives associated with this site may only discuss and/or transact securities business with residents of the following states: IN, KY, IL.
-            </p>
-            <p className="footer-legal">
-              © 2023 Synergy 360, LLC. All rights reserved.
-            </p>
+            <div className="footer-legal-container">
+              <p className="footer-legal">
+                Securities offered through LPL Financial, Member FINRA/SIPC. Advisory Services offered through National Wealth Management Group, LLC, An SEC Registered Investment Advisor. Insurance products offered through LPL Financial or its licensed affiliates. Alpina Financial Consultants, LLC and National Wealth Management Group, LLC are separate entities from LPL Financial LLC.
+              </p>
+              <p className="footer-legal">
+                The information contained in this email message is being transmitted to and is intended for the use of only the individual(s) to whom it is addressed.  If the reader of this message is not the intended recipient, you are hereby advised that any dissemination, distribution or copying of this message is strictly prohibited. If you have received this message in error, please immediately delete.
+              </p>
+              <p className="footer-legal">
+                Copyright 2020 -- LPL Financial. All Rights Reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -40,4 +45,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
