@@ -4,26 +4,26 @@ import EventCard from '../components/EventCard'
 export default function Events() {
 
     const events = [
-        {
-            id: 1, 
-            title:"Retirement Planning Workshop",
-            desc:"Join us for an informative session on retirement planning strategies in today's economic environment.",
-            time: "6:00 PM - 7:30 PM",
-            address: "9165 Otis Avenue, Indianapolis",
-            month:"APR",
-            day:"15",
-            year:"2025"
-        },
-        {
-            id: 2, 
-            title:"Social Security Strategies",
-            desc:"Learn about maximizing your Social Security benefits and integrating them into your retirement plan.",
-            time: "10:00 AM - 11:30 AM",
-            address: "Virtual Webinar",
-            month:"JUN",
-            day:"06",
-            year:"2025"
-        }
+        // {
+        //     id: 1, 
+        //     title:"Retirement Planning Workshop",
+        //     desc:"Join us for an informative session on retirement planning strategies in today's economic environment.",
+        //     time: "6:00 PM - 7:30 PM",
+        //     address: "9165 Otis Avenue, Indianapolis",
+        //     month:"APR",
+        //     day:"15",
+        //     year:"2025"
+        // },
+        // {
+        //     id: 2, 
+        //     title:"Social Security Strategies",
+        //     desc:"Learn about maximizing your Social Security benefits and integrating them into your retirement plan.",
+        //     time: "10:00 AM - 11:30 AM",
+        //     address: "Virtual Webinar",
+        //     month:"JUN",
+        //     day:"06",
+        //     year:"2025"
+        // }
     ]
 
   return (
@@ -37,7 +37,7 @@ export default function Events() {
         <section className='events-section'>
             <div className='events-wrapper'>
                 <div className='events-container'>
-                    {
+                    {events.length > 0 ? (
                         events.map((item)=>{
                             return(
                                 <EventCard
@@ -52,6 +52,10 @@ export default function Events() {
                                 />
                             )
                         })
+                    ) :
+                    (
+                        <div>There are no events at the moment.</div>
+                    )
                     }
                 </div>
             </div>

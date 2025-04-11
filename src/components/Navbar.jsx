@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className='navbar-links'>
                 <Link to='/' className='link'>Home</Link>
                 <Link to='/about' className='link'>About</Link>
-                <Link className='link'>LPL</Link>
+                <Link to="/lpl" className='link'>LPL</Link>
                 <Link className='link'>Resources</Link>
                 <Link to="/events" className='link'>Events</Link>
                 <a href='https://accountview.lpl.com/web/login' target="_blank" className='link'>Account View</a>

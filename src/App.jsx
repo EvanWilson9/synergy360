@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Events from './pages/Events'
+import LPL from './pages/LPL'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/events' element={<Events/>}/>
+        <Route path='/lpl' element={<LPL/>}/>
       </Routes>
       <Footer/>
     </>
