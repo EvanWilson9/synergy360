@@ -310,7 +310,8 @@ nav{
 }
 
 .contactme-section-container{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap:2rem;
 }
 .contact-detail{
@@ -552,7 +553,9 @@ input{
   display: grid;
   flex-direction: column;
   gap:2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  width: 100%;
+  box-sizing: border-box;
 }
 .ul-links-container{
   display: flex;
