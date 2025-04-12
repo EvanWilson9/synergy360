@@ -2,6 +2,7 @@ import React from 'react'
 import ContactMe from '../components/ContactMe'
 
 export default function Contact() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   return (
     <>
         <section className='aboutus-section'>

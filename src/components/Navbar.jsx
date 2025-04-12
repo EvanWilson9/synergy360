@@ -7,6 +7,7 @@ export default function Navbar() {
       <div className='header-wrapper'>
       {/*Top Nav*/}
       <div className='header-top'>
+        <div className='header-top-wrapper'>
         <h2 className='temp-title'>Synergy 360, LCC</h2>
         <div className='header-top-right'>
           <div className='header-address'>
@@ -17,6 +18,7 @@ export default function Navbar() {
             <a href='https://accountview.lpl.com/web/login' target="_blank"><button className='header-btn'>Client Login</button></a>
           </div>
         </div>
+        </div>
       </div>
       {/*Bottom Nav*/}
         <nav>
@@ -24,7 +26,7 @@ export default function Navbar() {
                 <Link to='/' className='link'>Home</Link>
                 <Link to='/about' className='link'>About</Link>
                 <Link to="/lpl" className='link'>LPL</Link>
-                <Link className='link'>Resources</Link>
+                <Link to="/resources" className='link'>Resources</Link>
                 <Link to="/events" className='link'>Events</Link>
                 <a href='https://accountview.lpl.com/web/login' target="_blank" className='link'>Account View</a>
                 <Link to="/contact" className='link'>Contact</Link>

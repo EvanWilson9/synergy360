@@ -10,6 +10,7 @@ export default function ContactMe() {
                 <h2>Contact Me</h2>
                 <p className='action-card-title'>I'm here to help you with any questions you may have.</p>
             </div>
+            <div className='contactme-section-container'>
             <div className='contactme-container'>
                 <h3>Main Office</h3>
                 <div className='contact-detail'>
@@ -52,8 +53,9 @@ export default function ContactMe() {
                     title="Office Location"
                 ></iframe>
             </div>
-            <div>
+            <div className='contact-form'>
                 <ContactForm/>
+            </div>
             </div>
         </div>
     </section>

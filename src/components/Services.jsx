@@ -7,8 +7,10 @@ export default function Services() {
   return (
     <section className='action-section'>
         <div className='action-wrapper'>
+            <div className='action-title-text'>
                 <h2 className='action-title'>How We Do It</h2>
                 <h3 className='action-card-title'>We use a comprehensive process to help clients address five key concerns:</h3>
+              </div>
                 <div className='action-card-container'>
                     <ActionCard
                     icon={<Brain style={{color:"rgb(220, 38, 38)", width:'30', height:'30'}}/>}

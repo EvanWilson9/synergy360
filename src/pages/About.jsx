@@ -6,6 +6,8 @@ import AboutMeetMe from '../components/AboutMeetMe'
 import UsefulLinks from '../components/UsefulLinks'
 
 export default function About() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  
   return (
     <>
         <AboutUs/>

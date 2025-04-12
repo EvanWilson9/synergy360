@@ -6,6 +6,7 @@ import Meet from '../components/Meet'
 import ContactMe from '../components/ContactMe'
 
 export default function Home() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
   return (
     <>
         <Hero/>

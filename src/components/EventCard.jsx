@@ -12,6 +12,7 @@ export default function EventCard(props) {
                 <div>{props.year}</div>
             </div>
         </div>
+        <div className='event-card-bottom'>
         <h3>{props.title}</h3>
         <div>{props.desc}</div>
         <div className='event-card-details'>
@@ -21,6 +22,7 @@ export default function EventCard(props) {
         <div className='event-card-details'>                        
             <MapPin style={{color:"rgb(220, 38, 38)", width:'20', height:'20'}}/>        
             {props.address}
+        </div>
         </div>
     </div>
   )
