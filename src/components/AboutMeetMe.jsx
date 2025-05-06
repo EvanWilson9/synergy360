@@ -8,7 +8,7 @@ export default function AboutMeetMe() {
         <img className='meet-img' src="/images/richard-moss-img.jpg"/>
         <div className='meet-text'>
         <div className='meet-desc'>
-          <h2>Meet Richard L. Moss</h2>
+          <h2 className='action-title'>Meet Richard L. Moss</h2>
             <p>
             Richard L. Moss has been a trusted advocate for his clients providing them with consistent guidance and
             timely advice on their most important financial matters since April of 2001. Richard began his career as

@@ -34,7 +34,7 @@ export default function UsefulLinks() {
   return (
     <section className='ul-section'>
         <div className='ul-wrapper'>
-            <h2>Useful Links</h2>
+            <h2 className='action-title'>Useful Links</h2>
             <div className='ul-card-container'>
                 {
                     data.map((item)=>{

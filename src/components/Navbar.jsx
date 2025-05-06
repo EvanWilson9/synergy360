@@ -8,7 +8,9 @@ export default function Navbar() {
       {/*Top Nav*/}
       <div className='header-top'>
         <div className='header-top-wrapper'>
-        <h2 className='temp-title'>Synergy 360, LCC</h2>
+        <Link className='link' to="/">
+          <h2 className='temp-title'>Synergy 360, LCC</h2>
+        </Link>
         <div className='header-top-right'>
           <div className='header-address'>
             <p>9165 Otis Avenue Suite 243</p>

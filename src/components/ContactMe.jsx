@@ -7,7 +7,7 @@ export default function ContactMe() {
     <section className='contactme-section'>
         <div className="contactme-wrapper">
             <div className='contact-titles-container'>
-                <h2>Contact Me</h2>
+                <h2 className='action-title'>Contact Me</h2>
                 <p className='action-card-title'>I'm here to help you with any questions you may have.</p>
             </div>
             <div className='contactme-section-container'>

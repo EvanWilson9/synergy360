@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Meet() {
   return (
@@ -8,7 +9,7 @@ export default function Meet() {
         <img className='meet-img' src="/images/richard-moss-img.jpg"/>
         <div className='meet-text'>
         <div className='meet-desc'>
-          <h2>Meet Richard L. Moss</h2>
+          <h2 className='action-title'>Meet Richard L. Moss</h2>
             <p>
               With over 20 years of experience in financial planning and wealth management,
               I'm dedicated to helping clients achieve their financial goals and secure their future.
@@ -19,7 +20,9 @@ export default function Meet() {
             </p>
         </div>
         <div>
-          <button className='learn-more red'>Learn More About Me <ArrowRight/></button>
+          <Link className='link' to="/about">
+            <button className='learn-more red'>Learn More About Me <ArrowRight/></button>
+          </Link>
         </div>
       </div>
       </div>

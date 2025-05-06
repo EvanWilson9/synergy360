@@ -22,7 +22,7 @@ export default function LPL() {
             <div className='aboutlpl-wrapper'>
                 <img className='lpl-logo' src="/images/lpl-logo.png"/>
                 <div className='aboutlpl-text'>
-                    <h2>About LPL Financial</h2>
+                    <h2 className='action-title'>About LPL Financial</h2>
                     <div className='about-lpl-text'>
                         <p>LPL Financial is one of the leading financial services companies and the largest independent broker/dealer in the nation.</p>
                         <p>For more than 30 years, LPL has served as an enabling partner, supporting financial advisors in their goals of protecting and growing their clients' wealth.</p>
@@ -35,7 +35,7 @@ export default function LPL() {
         </section>
         <section className='whylpl-section'>
             <div className='whylpl-wrapper'>
-                <h2 className='center'>Why LPL Financial?</h2>
+                <h2 className='action-title center'>Why LPL Financial?</h2>
                 <div className='why-card-container'>
                     {
                         data.map((item)=>{

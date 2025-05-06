@@ -7,7 +7,7 @@ export default function ResourceTemplate (props) {
         <section className='resourcet-section'>
             <div className='resourcet-wrapper'>
                 <div className='resource-text'>
-                    <h2 className=''>{props.title}</h2>
+                    <h2 className='action-title'>{props.title}</h2>
                     <p>{props.desc}</p>
                 </div>
                 <div className='video-container'>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { ArrowRight, ZoomIn, Brain, ShieldCheck, Bandage, ChartNoAxesColumn } from 'lucide-react';
 import ActionCard from './ActionCard';
+import { Link } from 'react-router-dom';
 
 
 export default function Services() {
@@ -39,7 +40,9 @@ export default function Services() {
                     />
                 </div>
                 <div>
+                  <Link className='link' to="/contact">
                     <button className='learn-more red'>Take Action <ArrowRight /></button>
+                  </Link>
                 </div>
             </div>
     </section>

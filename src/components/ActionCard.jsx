@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ActionCard(props) {
   return (
@@ -13,7 +14,9 @@ export default function ActionCard(props) {
                 <div className='action-card-desc'>{props.desc}</div>
             </div>
             <div>
-                <button className='action-learn-more'>Learn More <ArrowRight/></button>
+                <Link className='link' to="/about">
+                    <button className='action-learn-more'>Learn More <ArrowRight/></button>
+                </Link>
             </div>
         </div>
     </div>

@@ -35,7 +35,7 @@ export default function ProductsServices() {
   return (
     <section className='ps-section'>
         <div className="ps-wrapper">
-            <h2>Products & Services</h2>
+            <h2 className='action-title'>Products & Services</h2>
             <div className='ps-container'>
                 <div className='service-container'>
                     <h3>Investments</h3>

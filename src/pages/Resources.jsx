@@ -26,7 +26,7 @@ export default function Resources() {
         </section>
         <section className='resources-section'>
             <div className='resources-wrapper'>
-                <h2>Resources</h2>
+                <h2 className='action-title'>Resources</h2>
                 <div className='resources-container'>
                     {
                         data.map((item)=>{

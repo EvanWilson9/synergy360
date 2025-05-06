@@ -9,6 +9,12 @@ import Events from './pages/Events'
 import LPL from './pages/LPL'
 import Resources from './pages/Resources'
 import Estate from './resourcesPages/Estate'
+import Investment from './resourcesPages/Investment'
+import Lifestyle from './resourcesPages/Lifestyle'
+import Money from './resourcesPages/Money'
+import Retirement from './resourcesPages/Retirement'
+import Tax from './resourcesPages/Tax'
+import Insurance from './resourcesPages/Insurance'
 
 function App() {
 
@@ -23,6 +29,14 @@ function App() {
         <Route path='/lpl' element={<LPL/>}/>
         <Route path='/resources' element={<Resources/>}/>
         <Route path='/estate' element={<Estate/>}/>
+        <Route path='/insurance' element={<Insurance/>}/>
+        <Route path='/investment' element={<Investment/>}/>
+        <Route path='/lifestyle' element={<Lifestyle/>}/>
+        <Route path='/money' element={<Money/>}/>
+        <Route path='/retirement' element={<Retirement/>}/>
+        <Route path='/tax' element={<Tax/>}/>
+
+
       </Routes>
       <Footer/>
     </>
