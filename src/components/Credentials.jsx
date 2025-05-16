@@ -4,11 +4,8 @@ import React from 'react'
 export default function Credentials() {
 
     const credentials = [
-        {id: 1, title: "Emtpy Credential"},
-        {id: 2, title: "Emtpy Credential"},
-        {id: 3, title: "Emtpy Credential"},
-        {id: 4, title: "Emtpy Credential"},
-
+        {id: 1, title: "Collaborative Divorce Financial Specialist"},
+        {id: 2, title: "Chartered Plan Fiduciary Advisor (CPFA)"},
     ]
 
   return (
