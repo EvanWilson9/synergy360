@@ -11,7 +11,7 @@ const Footer = () => {
             <p>9165 Otis Avenue Suite 243</p>
             <p>Indianapolis, IN 46256</p>
             <p className="mt-4">Email: Richard.l.moss@lpl.com</p>
-            <p>Fax: 317 252 0805</p>
+            <p>Phone: (317) 555-1234</p>
           </div>
           
           <div className="footer-section">
