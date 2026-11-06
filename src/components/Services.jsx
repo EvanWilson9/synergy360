@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowRight, ZoomIn, Brain, ShieldCheck, Bandage, ChartNoAxesColumn } from 'lucide-react';
 import ActionCard from './ActionCard';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 
 export default function Services() {
