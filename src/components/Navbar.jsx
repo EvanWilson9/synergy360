@@ -1,40 +1,48 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router'
+import { Menu, X } from 'lucide-react'
+
+const links = [
+  { to: '/', label: 'Home', end: true },
+  { to: '/about', label: 'About' },
+  { to: '/lpl', label: 'LPL' },
+  { to: '/resources', label: 'Resources' },
+  { to: '/events', label: 'Events' },
+  { to: '/contact', label: 'Contact' },
+]
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false)
+  const close = () => setOpen(false)
+
   return (
     <header>
-      <div className='header-wrapper'>
-      {/*Top Nav*/}
-      <div className='header-top'>
-        <div className='header-top-wrapper'>
-        <Link className='link' to="/">
-          <h2 className='temp-title'>Synergy 360, LLC</h2>
-        </Link>
-        <div className='header-top-right'>
-          <div className='header-address'>
-            <p>9165 Otis Avenue Suite 243</p>
-            <p>Indianapolis, IN 46256</p>
-          </div>
-          <div>
-            <a href='https://accountview.lpl.com/web/login' target="_blank"><button className='header-btn'>Client Login</button></a>
-          </div>
-        </div>
+      <div className='header-utility'>
+        <div className='header-utility-inner'>
+          <p className='header-address'>9165 Otis Avenue Suite 243, Indianapolis, IN 46256</p>
+          <a className='header-utility-link' href='https://accountview.lpl.com/web/login' target='_blank' rel='noreferrer'>Account View</a>
         </div>
       </div>
-      {/*Bottom Nav*/}
-        <nav>
+      <div className='header-main'>
+        <div className='header-main-inner'>
+          <Link className='brand' to='/' onClick={close}>
+            Synergy 360<span>, LLC</span>
+          </Link>
+          <button className='nav-toggle' aria-label='Toggle menu' aria-expanded={open} onClick={() => setOpen(!open)}>
+            {open ? <X /> : <Menu />}
+          </button>
+          <nav className={open ? 'open' : ''}>
             <div className='navbar-links'>
-                <Link to='/' className='link'>Home</Link>
-                <Link to='/about' className='link'>About</Link>
-                <Link to="/lpl" className='link'>LPL</Link>
-                <Link to="/resources" className='link'>Resources</Link>
-                <Link to="/events" className='link'>Events</Link>
-                <a href='https://accountview.lpl.com/web/login' target="_blank" className='link'>Account View</a>
-                <Link to="/contact" className='link'>Contact</Link>
+              {links.map((l) => (
+                <NavLink key={l.to} to={l.to} end={l.end} className='nav-link' onClick={close}>{l.label}</NavLink>
+              ))}
             </div>
+            <a href='https://accountview.lpl.com/web/login' target='_blank' rel='noreferrer'>
+              <button className='header-btn'>Client Login</button>
+            </a>
           </nav>
         </div>
+      </div>
     </header>
   )
 }
